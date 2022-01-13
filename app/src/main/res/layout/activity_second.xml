@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:background="@color/gray">
+
+    <View
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/back_desc"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tab"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/iconDirection"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_favorite"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintStart_toEndOf="@+id/labelFrom"
+        app:layout_constraintTop_toTopOf="@+id/tab"
+        app:srcCompat="@drawable/to_arrow_purple" />
+
+    <TextView
+        android:id="@+id/labelFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/msemi"
+        android:text="Stara Pazova"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintStart_toEndOf="@+id/iconBack"
+        app:layout_constraintTop_toTopOf="@+id/tab" />
+
+    <TextView
+        android:id="@+id/labelTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/msemi"
+        android:text="Stara Pazova"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintStart_toEndOf="@+id/iconDirection"
+        app:layout_constraintTop_toTopOf="@+id/tab" />
+
+    <ImageView
+        android:id="@+id/iconCalendarWhen"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelFrom"
+        app:srcCompat="@drawable/calendar_white" />
+
+    <TextView
+        android:id="@+id/labelDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/mlight"
+        android:text="21 DEC"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintStart_toEndOf="@+id/iconCalendarWhen"
+        app:layout_constraintTop_toBottomOf="@+id/labelFrom" />
+
+    <ImageView
+        android:id="@+id/iconClockWhen"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintStart_toEndOf="@+id/labelDepartureDate"
+        app:layout_constraintTop_toBottomOf="@+id/labelFrom"
+        app:srcCompat="@drawable/clock_white" />
+
+    <TextView
+        android:id="@+id/labelWhenDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/mlight"
+        android:text="POLAZAK 18:30"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tab"
+        app:layout_constraintStart_toEndOf="@+id/iconClockWhen"
+        app:layout_constraintTop_toBottomOf="@+id/labelTo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray">
+
+            <fragment
+                android:id="@+id/fragmentRedVoznje"
+                android:name="com.example.projekatidemovozom.TrainTimetableFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                tools:layout="@layout/fragment_train_timetable" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

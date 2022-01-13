@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainTimetableFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iconTrain"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_favorite_icon"
+                android:padding="3dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/train_white" />
+
+            <TextView
+                android:id="@+id/labelTrainId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="16dp"
+                android:text="2033"
+                android:textStyle="bold"
+                android:textColor="#737373"
+                app:layout_constraintStart_toEndOf="@+id/iconTrain"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iconDateWhenTrainGo"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/bg_favorite_icon"
+                android:padding="3dp"
+                app:layout_constraintEnd_toStartOf="@+id/labelTrainDate"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calendar_white" />
+
+            <TextView
+                android:id="@+id/labelTrainDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="25dp"
+                android:text="18.12.2020"
+                android:textColor="#737373"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iconFromCity"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconTrain"
+                app:srcCompat="@drawable/current_purple" />
+
+            <TextView
+                android:id="@+id/labelMiniFromCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="15dp"
+                android:text="Beograd Centar"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/iconFromCity"
+                app:layout_constraintTop_toBottomOf="@+id/labelTrainId" />
+
+            <TextView
+                android:id="@+id/labelMiniFromCityTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:layout_marginRight="25dp"
+                android:text="14:00"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTrainDate" />
+
+            <TextView
+                android:id="@+id/labelDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="86 km"
+                android:textSize="16sp"
+                android:textColor="#737373"
+                app:layout_constraintStart_toEndOf="@+id/labelDecoration"
+                app:layout_constraintTop_toBottomOf="@+id/labelMiniFromCity" />
+
+            <TextView
+                android:id="@+id/labelDecoration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:text="|"
+                android:textColor="#303DA5"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/iconMiniToCity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconFromCity" />
+
+            <ImageView
+                android:id="@+id/iconMiniToCity"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/location_purple" />
+
+            <TextView
+                android:id="@+id/labelMiniToCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="9dp"
+                android:text="Novi Sad"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/iconMiniToCity"
+                app:layout_constraintTop_toBottomOf="@+id/labelDistance" />
+
+            <TextView
+                android:id="@+id/labelDistanceTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="25dp"
+                android:text="1 sat 10 min"
+                android:textColor="#737373"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelMiniFromCityTime" />
+
+            <TextView
+                android:id="@+id/labelMiniToCityTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+
+                android:layout_marginRight="25dp"
+                android:text="15:10"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelDistanceTime" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

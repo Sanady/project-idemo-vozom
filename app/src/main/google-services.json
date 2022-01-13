@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "878200923938",
+    "firebase_url": "https://projekatzeleznice-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "projekatzeleznice",
+    "storage_bucket": "projekatzeleznice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878200923938:android:ca47a95b1e778bc972277b",
+        "android_client_info": {
+          "package_name": "com.example.projekatidemovozom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878200923938-tui3890rdbiils1vfj4q32e0s38q9nb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projekatidemovozom",
+            "certificate_hash": "32ee1aa54154c4f9c8a6d201cfc3481fcb0585cf"
+          }
+        },
+        {
+          "client_id": "878200923938-c9t3ojcrk3e1veejpu3ie6a9pnmpdt9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWtHnTF-gtu9A_Q5AS3CM_bE6LxW7Avqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878200923938-9qhqphi80o7ro5kjr1fildc2tcmnekon.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

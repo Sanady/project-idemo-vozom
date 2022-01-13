@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="inputOd" type="id"></item>
+    <item name="inputDo" type="id"></item>
+    <item name="imageFrom" type="id"></item>
+    <item name="imageTo" type="id"></item>
+    <item name="imageSwitch" type="id"></item>
+    <item name="buttonFind" type="id"></item>
+    <item name="buttonDate" type="id"></item>
+    <item name="calendar" type="id"></item>
+    <item name="buttonHours" type="id"></item>
+    <item name="hours" type="id"></item>
+    <item name="layoutFavorite" type="id"></item>
+    <item name="icon_lamp" type="id"></item>
+    <item name="favoriteText" type="id"></item>
+    <item name="labelDescFavorite" type="id"></item>
+    <item name="divider" type="id"></item>
+    <item name="iconFrom" type="id"></item>
+    <item name="labelFromFavorite" type="id"></item>
+    <item name="iconTo" type="id"></item>
+    <item name="labelToFavorite" type="id"></item>
+    <item name="divider2" type="id"></item>
+    <item name="sign_in_button" type="id" />
+</resources>

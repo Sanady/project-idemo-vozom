@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">projekatIdemoVozom</string>
+    <string name="h1_idemo_vozom">IDEMO VOZOM</string>
+    <string name="h3_vodic">Vaš vodič kroz Srbiju</string>
+    <string name="find_text">Potraži</string>
+    <string name="odakle_idete">Mesto polaska?</string>
+    <string name="dokle_idete">Mesto dolazka?</string>
+    <string name="to_location">Image describes waypoint to location</string>
+    <string name="from_location">Image describes waypoint from location</string>
+    <string name="switch_stations">Buttons for switching stations</string>
+    <string name="icon_calendar">Icon calendar</string>
+    <string name="omeljene_destinacije">Omeljene destinacije</string>
+    <string name="icon_for_favorite_section">Icon for favorite section</string>
+    <string name="favorite_desc">Omeljene destinacije na osnovu preglednosti</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_desc">Button for back to main activiry</string>
+    <string name="idemo_vozom">Idemo Vozom</string>
+    <string name="va_vodi_kroz_srbiju">Vaš vodič kroz Srbiju!</string>
+    <string name="header1">Idemo Vozom</string>
+    <string name="header2">Vaš vodič kroz Srbiju</string>
+    <string name="logujte_se">Ulogujte se</string>
+    <string name="registrujte_se">Registrujte se</string>
+    <string name="unesite_password">Unesite password</string>
+    <string name="unesite_va_email">Unesite vaš email</string>
+    <string name="password">Password:</string>
+    <string name="email_address">Email address:</string>
+    <string name="imate_nalog_logujte_tako_sto_ce_te_kliknuti_na_ovaj_tekst">Imate nalog? Logujte tako sto ce te kliknuti na ovaj tekst</string>
+</resources>
